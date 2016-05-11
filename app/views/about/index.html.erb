@@ -1,0 +1,105 @@
+<section class="hero page" style="background-image:url(/assets/pages/about/bg.jpg)">
+</section>
+<section class="about page padded closed gray">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 mb-80">
+				<div class="explanation"><span>О компании</span></div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="heading medium"><span>Дрим тим</span></div>
+			</div>
+			<div class="col-md-6">
+				<div class="intro medium">
+					<span>Наша команда имеет все необходимые навыки, чтобы быть достойным спутником вашего бизнеса и радовать ваших клиентов новыми проектами.</span>
+				</div>
+				<div class="text mt-20">
+					<span>
+						Компания Pixel Party была основана в 2012 году группой энтузиастов, которые просто любили заниматься дизайном и писать код. Мы росли, развивались, обрастали замечательными специалистами и сейчас наша студия с радостью предоставит вам любую помощь в онлайн-сфере.</br></br>Мы занимаемся созданием брендов, логотипов, фирменного стиля, сайтов, мобильных приложений, типографии и многого другого. Рассказывать цифровые истории всегда сложно, но мы каждый раз делаем это с удовольствием. Мы любим сложные задачи, простых людей и зеленый чай.
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="approach page padded closed">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 mb-80">
+				<div class="explanation"><span>Наш подход</span></div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="heading medium"><span>Процесс</span></div>
+			</div>
+			<div class="col-md-6">
+				<div class="row step">
+					<div class="col-md-6 mb-80">
+						<%= image_tag "pages/about/art/1.png" %>
+					</div>
+					<div class="col-md-6 mb-80">
+						<div class="explanation"><span>Шаг первый</span></div>
+						<div class="heading small">
+							<span>Исследование</span>
+						</div>
+						<div class="separator"><%= render "partials/elements/separator" %></div>
+						<div class="text">
+							<span>Перед тем, как начать работу над проектом мы проводим анализ рынка, чтобы узнать больше о текущем положении вещей на рынке, о прямых конкурентах, а самое важное, о потенциальных клиентах. На этом этапе мы разрабатываем стратегию и принимается решение в каком направлении будет развиваться проект.</span>
+						</div>
+					</div>
+				</div>
+				<div class="row step">
+					<div class="col-md-6 mb-80">
+						<%= image_tag "pages/about/art/2.png" %>
+					</div>
+					<div class="col-md-6 mb-80">
+						<div class="explanation"><span>Шаг второй</span></div>
+						<div class="heading small">
+							<span>Дизайн</span>
+						</div>
+						<div class="separator"><%= render "partials/elements/separator" %></div>
+						<div class="text">
+							<span>Согласно проведенным исследованиям, а также предпочтениям заказчика мы начинаем создавать визуальную составляющую проекта, его уникальный стиль и узнаваемый бренд. Сюда входит работа над логотипом, фирменным стилем и дизайном сайта.</span>
+						</div>
+					</div>
+				</div>
+				<div class="row step">
+					<div class="col-md-6 mb-80">
+						<%= image_tag "pages/about/art/3.png" %>
+					</div>
+					<div class="col-md-6 mb-80">
+						<div class="explanation"><span>Шаг третий</span></div>
+						<div class="heading small">
+							<span>Разработка</span>
+						</div>
+						<div class="separator"><%= render "partials/elements/separator" %></div>
+						<div class="text">
+							<span>Мы выбираем наиболее подходящую платформу, которая сможет удовлетворить все существующие и будущие потребности проекта, и приступаем к созданию рабочей версии. На этой стадии проходит также тестирование всего фунцкионала проекта.</span>
+						</div>
+					</div>
+				</div>
+				<div class="row step">
+					<div class="col-md-6 mb-80">
+						<%= image_tag "pages/about/art/4.png" %>
+					</div>
+					<div class="col-md-6">
+						<div class="explanation"><span>Шаг последний</span></div>
+						<div class="heading small">
+							<span>Запуск</span>
+						</div>
+						<div class="separator"><%= render "partials/elements/separator" %></div>
+						<div class="text">
+							<span>Долгожданный запуск проекта сопровождается улыбками и брызгами шампанского, а затем и технической поддержкой и администрированием. Также мы всегда рады предложить помощь по дальнейшему развитию проекта и наращивания нового функционала.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="next container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="heading large">
+				<%= link_to "Услуги →", controller: "services", action: "index" %>
+			</div>
+		</div>
+	</div>
+</section>

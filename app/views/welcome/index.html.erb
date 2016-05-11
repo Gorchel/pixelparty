@@ -1,0 +1,126 @@
+<section class="hero shrink">
+	<div id="slider">
+		<div class="slide" style="background-color: #000; color: white;">
+			<div class="slide-info">
+				<div class="heading large">Сайты и приложения</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="intro medium">Мы воплощаем любые решения для бизнеса на любых экранах</div>
+				<%= link_to "Узнать больше", about_path, :class => "button mt-40" %>
+			</div>
+			<div id="scene" class="scene">
+				<li class="layer hidden-xs hidden-sm" data-depth="0.1">
+					<%= image_tag "projects/self/parallax/1.png", :style => "right:-40%;" %>
+				</li>
+				<li class="layer hidden-xs hidden-sm" data-depth="0.3">
+					<%= image_tag "projects/self/parallax/2.png", :style => "right:-40%;" %>
+				</li>
+				<li class="layer hidden-xs hidden-sm" data-depth="0.2">
+					<%= image_tag "projects/self/parallax/3.png", :style => "right:-40%;bottom:-50px;" %>
+				</li>
+				<li class="layer hidden-md hidden-lg" data-depth="0.8">
+					<%= image_tag "projects/self/parallax/2.png" %>
+				</li>
+			</div>
+		</div>
+		<div class="slide" style="background-color: #e7e6e8; background-image: url(/assets/projects/nerealty/parallax/background.jpg)">
+			<div class="slide-info">
+				<div class="heading large">Nerealty</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="intro medium">Площадка для торговли недвижимостью</div>
+				<%= link_to "Посмотреть проект", projects_nerealty_path, :class => "button mt-40" %>
+			</div>
+			<div id="scene" class="scene">
+				<li class="layer hidden-xs hidden-sm" data-depth="0.3">
+					<%= image_tag "projects/nerealty/parallax/1.png", :style => "right:-50%" %>
+				</li>
+				<li class="layer hidden-xs hidden-sm" data-depth="0.1">
+					<%= image_tag "projects/nerealty/parallax/2.png", :style => "left:-30%" %>
+				</li>
+				<li class="layer hidden-md hidden-lg" data-depth="0.8">
+					<%= image_tag "projects/nerealty/parallax/phone.png" %>
+				</li>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about brief padded closed gray">
+	<div class="container">
+		<div class="row tac">
+			<div class="col-md-12 heading small non-bold">
+				<!-- <span class="heavy">Привет, мы — Pixel Party,</span><span> и мы работаем ради вашего бизнеса</span> -->
+				<span>Привет, мы — Pixel Party</span>
+			</div>
+			<div class="col-md-8 col-md-offset-2 text mt-20">
+				<span>Мы молодое цифровое агентство, базирующееся в Севастополе, Россия.</br>
+						С 2012 года мы проектируем и разрабатываем цифровые решения для всех типов бизнеса.</br>
+						Мы поможем вам с созданием сайта, магазина, мобильным приложением и многим другим. Наша цель — брать не количеством а качеством и создавать эмоциональную связь между клиентами и вашим бизнесом.</span>
+			</div>
+			<a href="/about" class="button mt-40">Подробнее о нас</a>
+		</div>
+	</div>
+</section>
+
+<section class="services brief padded half-closed">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 mb-40">
+				<%= link_to services_path do %><%= image_tag "pages/welcome/art/monitor.png" %><% end %>
+			</div>
+			<div class="col-md-4 mb-40">
+				<div class="heading small">
+					<span>Сайты</span>
+				</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="text">
+					<span>Наша студия занимается разработкой проектов любого уровня. Мы специализируемся на создании эффективных решений для бизнеса. Сложность проекта роли не играет. Все будет готово в лучшем виде и в срок.</span>
+				</div>
+			</div>
+			<div class="col-md-2 mb-40">
+				<%= link_to services_path do %><%= image_tag "pages/welcome/art/phone.png" %><% end %>
+			</div>
+			<div class="col-md-4 mb-40">
+				<div class="heading small">
+					<span>Приложения</span>
+				</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="text">
+					<span>Мы идем в ногу со временем и предлагаем разработку приложений для платформ Android и iOS. Мы делаем как нативные, так и гибридные приложения, которые работают на всех платформах.</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 mb-40">
+				<%= link_to services_path do %><%= image_tag "pages/welcome/art/pencil.png" %><% end %>
+			</div>
+			<div class="col-md-4 mb-40">
+				<div class="heading small">
+					<span>Дизайн</span>
+				</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="text">
+					<span>Мы создаем инновационный, продуманный, комерческий дизайн. К нам обращаются те, для кого важно создать идеальное первое впечатление. Мы их не подводим.</span>
+				</div>
+			</div>
+			<div class="col-md-2 mb-40">
+				<%= link_to services_path do %><%= image_tag "pages/welcome/art/rocket.png" %><% end %>
+			</div>
+			<div class="col-md-4 mb-40">
+				<div class="heading small">
+					<span>Развитие</span>
+				</div>
+				<div class="separator"><%= render "partials/elements/separator" %></div>
+				<div class="text">
+					<span>Мы трепетно относимся ко всем проектам, которые сделаны нашими руками. Мы любим подкручивать в них винтики, улучшать и всячески развивать.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="works brief padded half-closed gray">
+	<div class="container-fluid">
+		<div class="row">
+			<%= render "partials/projects/nerealty" %>
+		</div>
+	</div>
+</section>

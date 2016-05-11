@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+
+/* WELCOME PAGE */
+
+.services.brief {
+	.separator {
+		margin-top: 10px;
+	}
+}
+.about.brief {
+	@media only screen and ( max-width: 768px ) {
+		.intro {
+			margin-top: 20px;
+		}
+	}
+}

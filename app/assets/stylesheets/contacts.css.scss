@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+
+/* CONTACTS PAGE */
+
+.contacts.page {
+	.contacts-form {
+		input, textarea, button {
+			width: 100%;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+	}
+	a {
+		color: $main-color;
+	}
+}

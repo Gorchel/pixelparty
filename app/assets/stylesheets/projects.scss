@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+
+/* SLIDER */
+
+.slide	{
+	min-height: 600px;
+	overflow: hidden;
+	.heading.large {
+		font-size: 6.25em;
+		@media only screen and ( max-width: 768px ) {
+			font-size: 4.25em;
+		}
+	}
+	.slide-info {
+		position: absolute;
+		width: 100%;
+		top: 30%;
+		text-align: center;
+		//text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+		z-index: 1;
+		.heading, .separator {
+			margin-bottom: 20px;
+		}
+	}
+	.scene {
+		img {
+			position: relative;
+		}
+	}
+}
+
+/* PROJECT */
+
+.project {
+	.image {
+		min-height: 300px;
+		background-position: center;
+		background-size: cover;
+		@include transition(all .4s ease);
+	}
+	.heading {
+		margin-top: 10px;
+	}
+	a:hover {
+		.image {
+			
+		}
+	}
+}
+

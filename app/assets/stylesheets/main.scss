@@ -1,0 +1,176 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "variables";
+@import "mixins";
+
+/* COMMON */
+
+body { 
+	font-family: $latoReg;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+	@include transition(all .3s ease);
+	&:hover {
+		color: $main-color;
+		text-decoration: none;
+	}
+}
+
+.container-fluid {
+	padding: 0 50px;
+	@media only screen and ( max-width: 768px ) {
+		padding: 0 15px;
+	}
+}
+
+/* BUTTONS */
+
+.button {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	border: 2px solid $main-color;
+	padding: 0 50px;
+	color: $main-color;
+
+	&:hover {
+		background-color: $main-color;
+		color: white!important;
+	}
+}
+
+/* LOGO */
+
+.logo:hover {
+	#heart {
+		rect {
+			fill: $main-color;
+		}
+	}
+}
+
+/* NAVIGATION */
+
+.navigation {
+	padding: 30px 50px 0;
+	height: 80px;
+	.logo {
+		float: left;
+		width: 120px;
+		height: 20px;
+	    svg {
+	    	fill: $font-color;
+	    }
+	}
+	.menu {
+		float: right;
+		li {
+			float: left;
+			line-height: 20px;
+			padding-left: 60px;
+		}
+	}
+}
+
+/* HERO */
+
+.hero {
+	overflow: hidden;
+	a:hover {
+		color: inherit;
+	}
+	&.page {
+		min-height: 280px;
+		max-height: 280px;
+		background-size: 100% auto;
+		background-position: center;
+	}
+}
+
+/* TEXT STYLING */
+
+.heading {
+	font-family: $latoHeavy;
+	line-height: 1;
+	&.small {
+		font-size: 2.25em;
+	}
+	&.medium {
+		font-size: 3em;
+	}
+	&.large {
+		font-size: 4.4em;
+	}
+	&.non-bold {
+		font-family: $latoReg;
+	}
+	@media only screen and ( max-width: 768px ) {
+		&.small {
+			font-size: 2em;
+		}
+		&.large {
+			font-size: 3em;
+		}
+	}
+}
+
+.intro {
+	&.medium {
+		font-size: 1.5em;
+	}
+	@media only screen and ( max-width: 768px ) {
+		&.medium {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.text {
+	line-height: 1.5;
+}
+
+.explanation {
+	font-size: 14px;
+	color: $text-gray;
+	font-style: italic;
+}
+
+.next {
+	text-align: right;
+	margin-bottom: 40px;
+}
+
+footer {
+	&.container-fluid {
+		padding: 40px 50px 60px 50px;
+	}
+	background-color: $font-color;
+	color: white;
+	.logo {
+		max-width: 200px;
+		svg {
+			fill: white;
+		}
+	}
+	.copyright {
+		margin-top: 20px;
+	}
+}
+

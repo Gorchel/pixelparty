@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pixel Party</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<meta name="Description" content="Мы проектируем и разрабатываем цифровые решения для всех типов бизнеса. Мы поможем вам с созданием сайта, магазина, мобильным приложением и многим другим. Наша цель — брать не количеством а качеством и создавать эмоциональную связь между клиентами и вашим бизнесом.">
+	<meta name="Keywords" content="Разработка сайтов, Разработка сайтов в Севастополе, Создать сайт, создать сайт в севастополе, поддержка сайта, раскрутка сайта, хостинг, web, интернет магазин, визитка, корпаративный сайт, логотип, дизайн, вебдизайн, лендингпедж, site, website create,RubyOnRails, Rails, Laravel, PHP, HTML5, CSS3, Севастополь">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render "partials/menu" %>
+<div style="clear:both"></div>
+
+<div id="main">
+	<%= yield %>
+</div>
+
+<footer class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<%= render "partials/elements/logo" %>
+			<div class="copyright">
+				<span>© Pixel Party 2012-2015</span>
+			</div>
+		</div>
+		<div class="col-md-2 col-md-offset-1">
+			<ul>
+				<li><%= link_to "Главная", root_path %></li>
+				<li><%= link_to "Студия", about_path %></li>
+				<a href="#">
+					<li>Работы</li>
+				</a>
+				<li><%= link_to "Услуги", services_path %></li>
+				<li><%= link_to "Контакты", contacts_path %></li>
+				<li><%= link_to "Сотрудничество", contacts_path %></li>
+			</ul>
+		</div>
+		<div class="col-md-3 col-md-offset-3">
+			<p>Россия, г. Севастополь</p>
+			<p>ПОР 43-В, 4й этаж, офис 3-4</p>
+			<p><a href="tel:+79787491448">+7 978 749 14 48</a></p>
+			<p><a href="mailto:hello@pixelparty.ru">hello@pixelparty.ru</a></p>
+			<p><a href="https://librasevastopol.ru/?s_cat=137">Хотим в топ на Либре</a></p>
+			<p><a href="https://librasevastopol.ru/?139975">Мы на librasevastopol.ru</a></p>
+		</div>
+		<div class="col-md-2">
+			
+		</div>
+	</div>
+</footer>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32082671 = new Ya.Metrika({
+                    id:32082671,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32082671" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

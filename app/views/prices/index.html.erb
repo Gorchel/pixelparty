@@ -1,0 +1,168 @@
+<section id='price-panel'>
+	<div class="container-fluid" id="price-banner"></div>
+	<div class="container-fluid" id="price-site">
+		<h1>Разработка сайта</h1>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 price-site-container text-center" id="cutaway">
+				<div id="price-sites-auth-panel">
+				  	<i class="fa fa-facebook" aria-hidden="true"></i>
+				  	<i class="fa fa-vk" aria-hidden="true"></i>
+				  	<i class="fa fa-skype" aria-hidden="true"></i>
+				</div>
+				<p class="price-sites-header">
+					<%= @sites[0]['name'] %>
+				</p>
+				<p class="price-sites-price">
+					от <%= number_with_delimiter(@sites[0]['price'], delimiter: " ") %> руб.
+				</p>
+				<p id="carret">
+					<i class="fa fa-chevron-down"></i>
+				</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 price-site-container text-center" id="magazin">
+				<div class="row">
+					<div id="magazin-sidebar">
+						<p class="magazin-sidebar-navicon">
+							<i class="fa fa-bars white-color" aria-hidden="true"></i>
+						</p>
+						<p id="magazin-sidebar-paypal">
+							<i class="fa fa-rub white-color" aria-hidden="true"></i>
+							<i class="fa fa-euro white-color" aria-hidden="true"></i>
+							<i class="fa fa-usd white-color" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 carousel-carret"></div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 carousel-content">
+						<p class="price-sites-header">
+							<%= @sites[1]['name'] %>
+						</p>
+						<p class="price-sites-price">
+							от <%= number_with_delimiter(@sites[1]['price'], delimiter: " ") %> руб.
+						</p>
+						<ol class="carousel-indicators">
+						    <li class="active"></li>
+						    <li></li>
+						    <li></li>
+						</ol>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 carousel-carret">
+						<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 price-site-container text-center" id="corporate">
+				<div id="corporate-phone-button"></div>
+				<div id="corporate-content">
+					<p class="price-sites-header">
+						<%= @sites[2]['name'] %>
+					</p>
+					<p class="price-sites-price">
+						от <%= number_with_delimiter(@sites[2]['price'], delimiter: " ") %> руб.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<h1>Разработка мобильных приложений</h1>
+	<div class="container">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Услуга</th>
+					<th>Цена</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Android</td>
+					<td>от <%= number_with_delimiter(50000, delimiter: " ") %>  руб.</td>
+				</tr>
+				<tr>
+					<td>iOS</td>
+					<td>от <%= number_with_delimiter(70000, delimiter: " ") %>  руб.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h1>SEO</h1>
+	<div class="container">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Услуга</th>
+					<th>Цена</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Топ Yandex, Google</td>
+					<td>от <%= number_with_delimiter(30000, delimiter: " ") %>  руб.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container-fluid" id="price-support">
+		<h1 class="white-color">Качественная поддержка вашего продукта</h1>
+		<div class="container">
+			<div class="row">
+				<% @tariffes.each do |tariff| %>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 price-support-container text-center">
+						<p class="price-support-header">
+							<%= tariff['name'] %>
+						</p>
+						<div class="price-support-price <%= tariff['color'] %>">
+							<div>
+								<span><%= tariff['price'] %></span><br/>
+								<span>руб./мес.</span>
+							</div>					 
+						</div>
+						<div class="price-support-content">
+							<ul>
+								<% tariff['content'].each do |li| %>
+									<li><%= li %></li>
+								<% end %>
+							</ul>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h1>Дополнительные услуги</h1>
+	<div class="container">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Услуга</th>
+					<th>Цена</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Хостинг</td>
+					<td>от <%= number_with_delimiter(300, delimiter: " ") %>  руб./мес.</td>
+				</tr>
+				<tr>
+					<td>Регистрация домена</td>
+					<td>от <%= number_with_delimiter(600, delimiter: " ") %>  руб./год/</td>
+				</tr>
+				<tr>
+					<td>Дополнительная работа программиста</td>
+					<td><%= number_with_delimiter(700, delimiter: " ") %>  руб./час</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+<section class="next container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="heading large">
+				<%= link_to "Контакты →", controller: "contacts", action: "index" %>
+			</div>
+		</div>
+	</div>
+</section>
